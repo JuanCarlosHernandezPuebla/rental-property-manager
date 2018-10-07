@@ -1,0 +1,57 @@
+/*
+* === Body ===
+*/
+body{
+    background-color: #f6f6eb;
+}
+
+/*
+* === Header ===
+*/
+.navbar-logo {
+    width: 25%;
+}
+
+.navbar {
+    background-color: #8fc800
+}
+
+.nav-item {
+    margin: 0px 30px;
+}
+
+.nav-link {
+    color:#0062b9;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*
+* === Main ===
+*/
+.container h1 {
+    margin-top: 10px;
+
+}
+
+/*
+* === Footer ===
+*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #36454f;
+}
+
+footer h3 {
+   color:#ffffff;
+   margin: 8px 0px;
+}
+
+footer p, span, li {
+   color: #ffffff;
+}
