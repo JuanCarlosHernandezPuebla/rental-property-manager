@@ -1,9 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Features from './components/Features';
 import Home from './components/Home';
 import Help from './components/Help';
 import Login from './components/Login';
+import Create from './components/Create';
 
 class Main extends Component {
 
@@ -16,6 +17,7 @@ class Main extends Component {
                     <Route exact={true} path='/features' component={Features}/>
                     <Route exact={true} path='/help' component={Help}/>                    
                     <Route exact={true} path='/login' component={Login}/>
+                    <Route exact={true} path='/create' component={Create}/>
                 </Switch>
             </main>
         );

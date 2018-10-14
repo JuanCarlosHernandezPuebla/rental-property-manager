@@ -19,7 +19,7 @@ class Footer extends Component {
                         </div>
 
                         <div className="col-md-3">
-                            <h3>Sign Up</h3>
+                            <h3>Create Account</h3>
                         </div>
 
                     </div>
