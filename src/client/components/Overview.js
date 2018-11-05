@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 
-class Create extends Component {
+class Overview extends Component {
 
-    render(){
-        return (
+    render() {
+        return(
             <div className="container">
-                <h1>Create An Account</h1>
+                <h1>Overview</h1>
                 <p>Under Construction...</p>
-            </div>
+            </div>     
         );
     }
+
 }
 
-export default Create;
+export default Overview;
