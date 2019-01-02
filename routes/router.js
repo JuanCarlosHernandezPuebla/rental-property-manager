@@ -1,6 +1,6 @@
-let express = require('express');
-let router = express.Router();
-let User = require('../models/User');
+const express = require('express');
+const router = express.Router();
+const User = require('../models/User');
 
 router.post('/login', function (req, res, next) {
   if (req.body.username && req.body.password) {

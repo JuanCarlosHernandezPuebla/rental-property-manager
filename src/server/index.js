@@ -1,9 +1,9 @@
 const path = require('path');
-let express = require('express');
-let session = require('express-session');
-let bodyParser = require('body-parser');
-let mongoose = require('mongoose');
-let MongoStore = require('connect-mongo')(session);
+const express = require('express');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const MongoStore = require('connect-mongo')(session);
 
 mongoose.connect('mongodb://localhost:27017/local', {
   useCreateIndex: true,
@@ -36,7 +36,7 @@ app.use(session({
 
 app.use(express.static(path.resolve(__dirname, '../../public')));
 
-let routes = require('../../routes/router');
+const routes = require('../../routes/router');
 
 app.use('/', routes);
 
