@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Features render test 1`] = `
+<div
+  className="container"
+>
+  <h1>
+    Features
+  </h1>
+  <p>
+    Under Construction...
+  </p>
+</div>
+`;
