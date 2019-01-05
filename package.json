@@ -9,7 +9,7 @@
     "client": "webpack-dev-server --mode development",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently 'yarn server' 'yarn client'",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
