@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create render test 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-signup"
+    method="POST"
+  >
+    <img
+      alt=""
+      className="mb-4"
+      height="72"
+      src="/images/rpm_logo.png"
+      width="72"
+    />
+    <h1
+      className="h3 mb-3 font-weight-normal"
+    >
+      Create an account
+    </h1>
+    <label
+      htmlFor="inputUsername"
+    >
+      Username
+    </label>
+    <input
+      autoFocus={true}
+      className="form-control"
+      id="inputUsername"
+      name="username"
+      placeholder="Username"
+      required={true}
+      type="text"
+    />
+    <label
+      htmlFor="inputPassword"
+    >
+      Password
+    </label>
+    <input
+      className="form-control"
+      id="inputPassword"
+      name="password"
+      placeholder="Password"
+      required={true}
+      type="password"
+    />
+    <button
+      className="btn btn-lg btn-primary btn-block btn-login"
+      type="submit"
+    >
+      Create an account
+    </button>
+    <div>
+      <Link
+        className="nav-link"
+        replace={false}
+        to="/login"
+      >
+        Log Into Existing Account
+      </Link>
+    </div>
+  </form>
+</div>
+`;
