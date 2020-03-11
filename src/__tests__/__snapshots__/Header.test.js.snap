@@ -15,8 +15,9 @@ exports[`Header render test 1`] = `
         <img
           alt="logo"
           className="img-fluid"
+          height="122"
           src="/images/rpm_logo.png"
-          width="25%"
+          width="122"
         />
       </a>
     </div>
@@ -90,7 +91,7 @@ exports[`Header render test 1`] = `
           className="nav-link dropdown-toggle"
           data-toggle="dropdown"
           href="#"
-          id="navbarDropdown"
+          id="navbar_dropdown"
           role="button"
         >
           <FontAwesomeIcon

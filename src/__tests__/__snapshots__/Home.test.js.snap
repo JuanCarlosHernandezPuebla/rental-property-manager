@@ -2,7 +2,7 @@
 
 exports[`Home render test 1`] = `
 <div
-  className="container"
+  className="container main-content"
 >
   <h1>
     Home
@@ -10,5 +10,35 @@ exports[`Home render test 1`] = `
   <p>
     Under Construction...
   </p>
+  <div>
+    <img
+      alt="Home real estate"
+      className="img-fluid"
+      height="400"
+      src="/images/home-real-estate.jpg"
+      width="400"
+    />
+  </div>
+  <div>
+    <div>
+      <form
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="search_property"
+        >
+          Search Property
+        </label>
+        <input
+          className="form-control"
+          id="search_property"
+          onChange={[Function]}
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </form>
+    </div>
+  </div>
 </div>
 `;

@@ -7,6 +7,7 @@ exports[`Create render test 1`] = `
   <form
     className="form-signup"
     method="POST"
+    onSubmit={[Function]}
   >
     <img
       alt=""
@@ -21,27 +22,27 @@ exports[`Create render test 1`] = `
       Create an account
     </h1>
     <label
-      htmlFor="inputUsername"
+      htmlFor="input_username"
     >
       Username
     </label>
     <input
       autoFocus={true}
       className="form-control"
-      id="inputUsername"
+      id="input_username"
       name="username"
       placeholder="Username"
       required={true}
       type="text"
     />
     <label
-      htmlFor="inputPassword"
+      htmlFor="input_password"
     >
       Password
     </label>
     <input
       className="form-control"
-      id="inputPassword"
+      id="input_password"
       name="password"
       placeholder="Password"
       required={true}

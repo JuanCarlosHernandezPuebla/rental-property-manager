@@ -22,14 +22,14 @@ exports[`Login render test 1`] = `
     </h1>
     <label
       className="sr-only"
-      htmlFor="inputUsername"
+      htmlFor="input_username"
     >
       Username
     </label>
     <input
       autoFocus={true}
       className="form-control"
-      id="inputUsername"
+      id="input_username"
       name="username"
       placeholder="Username"
       required={true}
@@ -37,13 +37,13 @@ exports[`Login render test 1`] = `
     />
     <label
       className="sr-only"
-      htmlFor="inputPassword"
+      htmlFor="input_password"
     >
       Password
     </label>
     <input
       className="form-control"
-      id="inputPassword"
+      id="input_password"
       name="password"
       placeholder="Password"
       required={true}
