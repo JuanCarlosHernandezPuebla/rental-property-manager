@@ -7,7 +7,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const outputDirectory = 'dist';
 
 module.exports = {
-  entry: "./src/client/index.js",
+  entry: "./src/index.js",
   module: {
     rules: [
       {
@@ -35,10 +35,7 @@ module.exports = {
     contentBase: path.join(__dirname,'public'),
     port: 8080,
     open: true,
-    publicPath: "http://localhost:8080/dist",
-    proxy: {
-      '/': 'http://localhost:3000'
-    }
+    publicPath: "http://localhost:8080/dist"
   },
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),

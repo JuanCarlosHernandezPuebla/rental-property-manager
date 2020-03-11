@@ -10,7 +10,7 @@ class Header extends Component {
                 <nav className="navbar navbar-expand-lg">
                     <div className="navbar-logo">
                         <a className="navbar-brand navbar-left" href="/home">
-                            <img className="img-fluid" src="/images/rpm_logo.png" width="25%" alt="logo" />
+                            <img className="img-fluid" src="/images/rpm_logo.png" alt="logo" width="122" height="122"/>
                         </a>
                     </div>
 
@@ -22,7 +22,7 @@ class Header extends Component {
                             <Link className="nav-link" to='/features'><FontAwesomeIcon icon="star" className="mr-2"/>Features</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle" href="#" id="navbar_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <FontAwesomeIcon icon="book" className="mr-2"/>
                                 Resources
                                 </a>
