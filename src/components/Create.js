@@ -18,6 +18,11 @@ class Create extends Component {
       },
       body: JSON.stringify(data)
     })
+      .then(response => response.json())
+      .then(data => {
+        const { success } = data
+        success ? alert('Successfully created user account!') : alert('Failed to create user account!');
+      })
       .catch(error => {
         console.error('Error: ', error);
       })

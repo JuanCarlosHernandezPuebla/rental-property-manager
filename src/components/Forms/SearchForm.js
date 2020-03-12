@@ -15,11 +15,13 @@ export default class SearchForm extends React.Component {
   }
 
   searchProperty = event => {
-    event.preventDefault()
+    event.preventDefault();
     // TODO: Use a property search API
   }
 
   render() {
+    const { value } = this.state
+
     return (
       <div>
         <form onSubmit={this.searchProperty}>
@@ -29,7 +31,7 @@ export default class SearchForm extends React.Component {
             id="search_property"
             className="form-control"
             placeholder="Search"
-            value={this.state.value}
+            value={value}
             onChange={this.handleChange} />
         </form>
       </div>

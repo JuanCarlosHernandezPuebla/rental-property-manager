@@ -3,9 +3,9 @@ import Header from './components/Header';
 import Main from './Main';
 import Footer from './components/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHome, faBook, faQuestionCircle, faSignInAlt, faStar } from '@fortawesome/free-solid-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faHome, faStar, faBook, faQuestionCircle, faSignInAlt);
+library.add(fas);
 
 class App extends Component {
 

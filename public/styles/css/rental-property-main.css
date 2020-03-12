@@ -40,11 +40,28 @@ body{
 * === Main ===
 */
 main h1 {
-    margin-top: 10px;
+    padding-top: 10px;
+}
+
+main h2 {
+    padding: 40px 0px;
+}
+
+main span {
+    color: #212529;
 }
 
 main .container.main-content {
     min-height: 700px;
+}
+
+main div.feature-item {
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+main span.item-text {
+  font-size: large;
 }
 
 /*
