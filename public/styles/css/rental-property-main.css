@@ -1,125 +1,143 @@
 /*
 * === Html ===
 */
+
 html {
-    position: relative;
-    min-height: 100%;
+	position: relative;
+	min-height: 100%;
 }
+
 
 /*
 * === Body ===
 */
-body{
-    background-color: #f6f6eb;
+
+body {
+	background-color: #f6f6eb;
 }
+
 
 /*
 * === Header ===
 */
+
 .navbar-logo {
-    width: 25%;
+	width: 25%;
 }
 
 .navbar {
-    background-color: #8fc800;
+	background-color: #8fc800;
 }
 
 .nav-item {
-    margin: 0px 30px;
+	margin: 0px 30px;
 }
 
 .nav-link {
-    color:#0062b9;
+	color: #0062b9;
 }
 
 .bold {
-    font-weight: bold;
+	font-weight: bold;
 }
+
 
 /*
 * === Main ===
 */
+
 main h1 {
-    padding-top: 10px;
+	padding-top: 10px;
 }
 
 main h2 {
-    padding: 40px 0px;
+	padding: 40px 0px;
 }
 
 main span {
-    color: #212529;
+	color: #212529;
 }
 
 main .container.main-content {
-    min-height: 700px;
+	min-height: 700px;
 }
 
 main div.feature-item {
-    margin-top: 15px;
-    padding-bottom: 10px;
+	margin-top: 15px;
+	padding-bottom: 10px;
 }
 
 main span.item-text {
-  font-size: large;
+	font-size: large;
 }
+
 
 /*
 * === Login ===
 */
-.form-login, .form-signup {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
-    min-height: 650px;
-  }
 
-.form-login .form-control, .form-signup .form-control  {
-    position: relative;
-    box-sizing: border-box;
-    height: auto;
-    padding: 10px;
-    font-size: 16px;
+.form-login,
+.form-signup {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	min-height: 650px;
 }
 
-.form-login .form-control:focus, .form-signup .form-control:focus {
-    z-index: 2;
+.form-login .form-control,
+.form-signup .form-control {
+	position: relative;
+	box-sizing: border-box;
+	height: auto;
+	padding: 10px;
+	font-size: 16px;
 }
 
-.form-login input[type="text"], .form-signup input[type="text"] {
-    margin-bottom: 5px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+.form-login .form-control:focus,
+.form-signup .form-control:focus {
+	z-index: 2;
 }
 
-.form-login input[type="password"], .form-signup input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.form-login input[type="text"],
+.form-signup input[type="text"] {
+	margin-bottom: 5px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
-.form-login .btn-login, .form-signup .btn-login {
-    background-color: #8fc800;
-    border-color: #8fc800;
+.form-login input[type="password"],
+.form-signup input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
+
+.form-login .btn-login,
+.form-signup .btn-login {
+	background-color: #8fc800;
+	border-color: #8fc800;
+}
+
 
 /*
 * === Footer ===
 */
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #36454f;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #36454f;
 }
 
 footer h3 {
-   color:#ffffff;
-   margin: 8px 0px;
+	color: #ffffff;
+	margin: 8px 0px;
 }
 
-footer p, span, li {
-   color: #ffffff;
+footer p,
+footer span,
+footer li {
+	color: #ffffff;
 }
