@@ -60,25 +60,23 @@ exports[`Home render test 1`] = `
         />
       </div>
       <div>
-        <div>
-          <form
-            onSubmit={[Function]}
+        <form
+          onSubmit={[Function]}
+        >
+          <label
+            htmlFor="search_property"
           >
-            <label
-              htmlFor="search_property"
-            >
-              Search Property
-            </label>
-            <input
-              className="form-control"
-              id="search_property"
-              onChange={[Function]}
-              placeholder="Search"
-              type="text"
-              value=""
-            />
-          </form>
-        </div>
+            Search Property
+          </label>
+          <input
+            className="form-control"
+            id="search_property"
+            onChange={[Function]}
+            placeholder="Search"
+            type="text"
+            value=""
+          />
+        </form>
       </div>
     </div>
   </div>

@@ -1,68 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Create render test 1`] = `
-<div
-  className="container"
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "canGo": [Function],
+      "createHref": [Function],
+      "entries": Array [
+        Object {
+          "hash": "",
+          "key": "testKey",
+          "pathname": "/create",
+          "search": "",
+        },
+      ],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "index": 0,
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "key": "testKey",
+        "pathname": "/create",
+        "search": "",
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
 >
-  <form
-    className="form-signup"
-    method="POST"
-    onSubmit={[Function]}
-  >
-    <img
-      alt=""
-      className="mb-4"
-      height="72"
-      src="/images/rpm_logo.png"
-      width="72"
-    />
-    <h1
-      className="h3 mb-3 font-weight-normal"
-    >
-      Create an account
-    </h1>
-    <label
-      htmlFor="input_username"
-    >
-      Username
-    </label>
-    <input
-      autoFocus={true}
-      className="form-control"
-      id="input_username"
-      name="username"
-      placeholder="Username"
-      required={true}
-      type="text"
-    />
-    <label
-      htmlFor="input_password"
-    >
-      Password
-    </label>
-    <input
-      className="form-control"
-      id="input_password"
-      name="password"
-      placeholder="Password"
-      required={true}
-      type="password"
-    />
-    <button
-      className="btn btn-lg btn-primary btn-block btn-login"
-      type="submit"
-    >
-      Create an account
-    </button>
-    <div>
-      <Link
-        className="nav-link"
-        replace={false}
-        to="/login"
-      >
-        Log Into Existing Account
-      </Link>
-    </div>
-  </form>
-</div>
+  <Create />
+</Router>
 `;
