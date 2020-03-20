@@ -1,13 +1,49 @@
 import React, { useState } from 'react';
 
+const createAccountEndPoint = 'http://localhost:3000/users/create';
+
 export default function SignupForm(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const { onSubmit } = props;
+  const createAccount = event => {
+    event.preventDefault();
+    const { setModal } = props;
+    const data = {
+      username: username,
+      password: password
+    }
+    fetch(createAccountEndPoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(response => response.json())
+      .then(data => {
+        const { success } = data
+        // TODO: Replace
+        success ? setModal({
+          show: true,
+          icon: 'check-circle',
+          title: 'Success',
+          body: 'Successfully created user account!'
+        }) :
+          setModal({
+            show: true,
+            icon: 'exclamation-circle',
+            title: 'Failure',
+            body: 'Failed to create user account!'
+          });
+      })
+      .catch(error => {
+        console.error('Error: ', error);
+      })
+  }
 
   return (
-    <form className="form-signup" method="POST" onSubmit={onSubmit}>
+    <form className="form-signup" method="POST" onSubmit={createAccount}>
       <img className="mb-4" src="/images/rpm_logo.png" alt="logo" width="72" height="72" />
       <h1 className="h3 mb-3 font-weight-normal">Create an account</h1>
       <label htmlFor="input_username">Username</label>

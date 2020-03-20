@@ -11,24 +11,24 @@ export default class Home extends Component {
           <div className="col-sm-6">
             <h2>Manage your real estate portfolio</h2>
             <div className="feature-item">
-              
-                <FontAwesomeIcon icon="building" size="3x" className="mr-2 align-middle" />
-                <span className="item-text">
-              Central view of your current inventory.
+
+              <FontAwesomeIcon icon="building" size="3x" className="mr-2 align-middle" />
+              <span className="item-text">
+                Central view of your current inventory.
               </span>
             </div>
             <div className="feature-item">
-              
-                <FontAwesomeIcon icon="receipt" size="3x" className="mr-3 align-middle" />
-                <span className="item-text">
-              Keep track of your real estate expenses.
+
+              <FontAwesomeIcon icon="receipt" size="3x" className="mr-3 align-middle" />
+              <span className="item-text">
+                Keep track of your real estate expenses.
               </span>
             </div>
             <div className="feature-item">
-              
-                <FontAwesomeIcon icon="search" size="3x" className="mr-1 align-middle" />
-                <span className="item-text">
-              Search for new potential properties.
+
+              <FontAwesomeIcon icon="search" size="3x" className="mr-1 align-middle" />
+              <span className="item-text">
+                Search for new potential properties.
               </span>
             </div>
           </div>
