@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { config } from '../../config'
 
-const createAccountEndPoint = 'http://localhost:3000/users/create';
+const base = config['base'];
+const createAccountEndPoint = config['endpoints']['createAccount'];
 
 export default function SignupForm(props) {
   const [username, setUsername] = useState('');
@@ -13,7 +15,7 @@ export default function SignupForm(props) {
       username: username,
       password: password
     }
-    fetch(createAccountEndPoint, {
+    fetch(`${base}${createAccountEndPoint}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

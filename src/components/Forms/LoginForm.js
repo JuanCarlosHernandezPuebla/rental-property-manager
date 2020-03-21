@@ -1,6 +1,8 @@
 import * as React from 'react';
+import { config } from '../../config'
 
-const loginEndPoint = 'http://localhost:3000/users/login';
+const base = config['base'];
+const loginEndPoint = config['endpoints']['login'];
 
 export default class LoginForm extends React.Component {
   constructor(props) {
@@ -18,7 +20,7 @@ export default class LoginForm extends React.Component {
       username,
       password
     }
-    fetch(loginEndPoint, {
+    fetch(`${base}${loginEndPoint}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
