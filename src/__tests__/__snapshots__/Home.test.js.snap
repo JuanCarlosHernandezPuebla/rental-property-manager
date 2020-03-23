@@ -2,7 +2,7 @@
 
 exports[`Home render test 1`] = `
 <div
-  className="container main-content"
+  className="container"
 >
   <div
     className="row"
@@ -10,9 +10,25 @@ exports[`Home render test 1`] = `
     <div
       className="col-sm-6"
     >
-      <h2>
-        Manage your real estate portfolio
-      </h2>
+      <h1>
+        Home
+      </h1>
+      <div>
+        <img
+          alt="Home real estate"
+          className="img-fluid mt-2"
+          height="600"
+          src="/images/home-real-estate.jpg"
+          width="700"
+        />
+      </div>
+      <div>
+        <h2
+          className="feature-title"
+        >
+          Manage your real estate portfolio
+        </h2>
+      </div>
       <div
         className="feature-item"
       >
@@ -44,26 +60,17 @@ exports[`Home render test 1`] = `
     <div
       className="col-sm-6"
     >
-      <h1>
-        Home
-      </h1>
-      <p>
-        Under Construction...
-      </p>
-      <div>
-        <img
-          alt="Home real estate"
-          className="img-fluid"
-          height="400"
-          src="/images/home-real-estate.jpg"
-          width="400"
-        />
-      </div>
-      <div>
+      <div
+        className="search-form-content"
+      >
+        <h2>
+          Search Property
+        </h2>
         <form
           onSubmit={[Function]}
         >
           <label
+            className="sr-only"
             htmlFor="search_property"
           >
             Search Property
@@ -77,6 +84,84 @@ exports[`Home render test 1`] = `
             value=""
           />
         </form>
+      </div>
+      <div
+        className="home-map"
+      >
+        <div
+          onClick={[Function]}
+          onMouseDownCapture={[Function]}
+          onMouseMove={[Function]}
+          style={
+            Object {
+              "height": "100%",
+              "margin": 0,
+              "padding": 0,
+              "position": "relative",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "left": 0,
+                "margin": 0,
+                "padding": 0,
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "height": "50%",
+                "left": "50%",
+                "margin": 0,
+                "padding": 0,
+                "position": "absolute",
+                "top": "50%",
+                "width": "50%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                  "left": 0,
+                  "margin": 0,
+                  "padding": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <div
+                  className="property-marker"
+                >
+                  Location
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
