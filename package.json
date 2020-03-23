@@ -7,8 +7,6 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
     "client": "yarn start",
-    "server": "nodemon src/server/index.js",
-    "dev": "concurrently 'yarn server' 'yarn client'",
     "test": "jest --coverage"
   },
   "repository": {
