@@ -20,6 +20,9 @@ body {
 /*
 * === Header ===
 */
+nav {
+	height: 100px;
+}
 
 .navbar-logo {
 	width: 25%;
@@ -47,13 +50,15 @@ body {
 */
 main {
 	min-height: 550px;
+	font-weight: 400;
 }
 
-main h1 {
+main h1, main h2 {
 	padding-top: 10px;
+	font-weight: 400;
 }
 
-main h2 {
+main h2.feature-title {
 	padding: 40px 0px;
 }
 
@@ -61,14 +66,38 @@ main span {
 	color: #212529;
 }
 
-main .container.main-content {
-	min-height: 700px;
+.home-map {
+	height: 600px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.property-marker {
+	color: #ffffff;
+	background: #36454f;
+	padding: 15px 10px;
+	display: inline-flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
 }
 
 main .login-form-content {
 	background-color: #ffffff;
 	margin: 100px 200px 0px;
 }
+
+
+main .signup-form-content {
+	background-color: #ffffff;
+	margin: 100px 200px;
+}
+
+.search-form-content h2 {
+	margin: 5px 0px;
+} 
 
 main div.feature-item {
 	margin-top: 15px;
@@ -132,7 +161,7 @@ main span.item-text {
 */
 
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	background-color: #36454f;

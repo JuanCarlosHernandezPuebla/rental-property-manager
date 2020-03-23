@@ -16,9 +16,11 @@ export default function Create() {
 
   return (
     <div className="container">
-      <SignupForm setModal={setModal} />
-      <div className="text-center">
-        <Link className="nav-link" to="/login">Log Into Existing Account</Link>
+      <div className="signup-form-content">
+        <SignupForm setModal={setModal} />
+        <div className="text-center">
+          <Link className="nav-link" to="/login">Log Into Existing Account</Link>
+        </div>
       </div>
       <Modal
         show={modal.show}

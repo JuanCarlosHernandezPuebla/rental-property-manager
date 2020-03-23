@@ -20,7 +20,7 @@ export default class SearchForm extends React.Component {
 
     return (
       <form onSubmit={this.searchProperty}>
-        <label htmlFor="search_property">Search Property</label>
+        <label className="sr-only" htmlFor="search_property">Search Property</label>
         <input
           type="text"
           id="search_property"
